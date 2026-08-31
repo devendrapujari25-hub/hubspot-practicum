@@ -1,0 +1,27 @@
+doctype html
+html
+    head
+        title= title
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+    body
+        h1 Add a New Custom Object Record
+        a(href="/") Return to the homepage
+        br
+        br
+        form(method="POST" action="/update-cobj")
+            label(for="name") Name:
+            br
+            input(type="text" name="name" required)
+            br
+            br
+            label(for="bio") Bio:
+            br
+            input(type="text" name="bio" required)
+            br
+            br
+            label(for="age") Age:
+            br
+            input(type="number" name="age" required)
+            br
+            br
+            input(type="submit" value="Submit")
