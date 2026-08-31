@@ -1,0 +1,22 @@
+doctype html
+html
+    head
+        title= title
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+    body
+        h1 Custom Objects Table
+        a(href="/update-cobj") Add/Update this table
+        br
+        br
+        table(border="1")
+            thead
+                tr
+                    th Name
+                    th Bio
+                    th Age
+            tbody
+                each item in data
+                    tr
+                        td= item.properties.name
+                        td= item.properties.bio
+                        td= item.properties.age
